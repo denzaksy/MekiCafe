@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+:root{
+    /* Colors */
+--color-kırıkbeyaz:#FFF7F0;
+--color-beyaz: #F2F7EE;
+--color-gri: #DBE8CE;
+--color-grimsiy: #C4D9AF;
+--color-berrakyeşil: #ADCB90;
+--color-açıkyeşil: #96BC71;
+--color-gazozyeşili: #80AD52;
+--color-lime: #698E43;
+--color-kaktüsy: #526F34;
+--color-ky: #405729;
+--color-ekstra-ky: #243117;
+--color-siyah: #0D1108;
+/* Font Sizes */
+--font-size-s: 0.9rem;
+--font-size-m: 1rem;
+--font-size-l: 1.2rem;
+--font-size-xl: 1.5rem;
+--font-size-xxl: 2rem;
+--font-size-xxxl: 2.3rem;
+/*Font Weights */
+--font-weight-normal: 400;
+--font-weight-medium: 500;
+--font-weight-semibold: 600;
+--font-weight-bold: 700;
+/*Border Radius */
+--border-radius-s: 8px;
+--border-radius-m: 30px;
+--border-radius-circle: 50%;
+/*Site max width */
+--site-max-width: 1300px;
+}
+/*bütün sayfalarda ortak olan stiller*/
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+img {
+    width: 100%;
+}
+/*Header ve navbar stilleri*/
+header {
+    padding-top: 5px;
+    background: var(--color-ky);
+   
+}
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+}
+
+.navbar .nav-menu .nav-link {
+    color: var(--color-kırıkbeyaz);
+    padding: 10px 15px;
+    padding-right: 10px;
+    border-radius: var(--border-radius-m);
+    font-size: var(--font-size-m);
+     transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    background: var(--color-ekstra-ky);
+    color: var(--color-beyaz);
+   
+}
+
+
+
+.navbar .nav-menu  {
+    display: flex;
+    gap: 10px;
+}
+
