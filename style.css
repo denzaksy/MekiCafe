@@ -272,13 +272,13 @@ header.shrink .nav-logo img {
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-    padding: 60px 20px;
+    padding: 200px 20px 60px 20px;
 }
 
 .flip-card {
     background-color: transparent;
-    width: 280px; 
-    height: 450px; 
+    width: 360px; 
+    height: 500px; 
     perspective: 1000px;
 }
 
@@ -350,17 +350,18 @@ header.shrink .nav-logo img {
 
 .menu-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 60px 20px;
-    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;    
+    min-height: 80vh;        
+    gap: 30px;              
+    padding: 180px;     
+    flex-wrap: wrap;
 }
 
 
 .menu-card {
     position: relative;
-    width: 320px;
+    width: 340px;
     height: 480px;
     border-radius: 20px;
     overflow: hidden; 
@@ -408,4 +409,8 @@ header.shrink .nav-logo img {
     font-weight: 500;
     font-family: 'Playfair Display', serif; 
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+body {
+    background-color: var(--color-kırıkbeyaz);
 }
