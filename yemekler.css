@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* Colors */
+    --color-kırıkbeyaz: #FFF7F0;
+    --color-beyaz: #F2F7EE;
+    --color-gri: #DBE8CE;
+    --color-grimsiy: #C4D9AF;
+    --color-berrakyeşil: #ADCB90;
+    --color-açıkyeşil: #96BC71;
+    --color-gazozyeşili: #80AD52;
+    --color-lime: #698E43;
+    --color-kaktüsy: #526F34;
+    --color-ky: #405729;
+    --color-ekstra-ky: #243117;
+    --color-siyah: #0D1108;
+    /* Font Sizes */
+    --font-size-s: 0.9rem;
+    --font-size-m: 1rem;
+    --font-size-l: 1.2rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 2rem;
+    --font-size-xxxl: 2.3rem;
+    /*Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    /*Border Radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+    /*Site max width */
+    --site-max-width: 1300px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
+
+.section-content {
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--color-ky);
+    font-weight: var(--font-weight-medium);
+    width: 100%;
+    z-index: 5;
+    transition: padding 0.3s ease, background 0.3s ease;
+}
+
+header.shrink {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: rgba(64, 87, 41, 0.95);
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav-logo img {
+    transition: height 0.3s ease;
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+header.shrink .nav-logo img {
+    height: 45px;
+}
+
+.navbar .nav-menu .nav-link {
+    color: var(--color-kırıkbeyaz);
+    padding: 10px 15px;
+    padding-right: 10px;
+    border-radius: var(--border-radius-m);
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    background: var(--color-ekstra-ky);
+    color: var(--color-beyaz);
+
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.urun-listesi {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 200px 20px 60px 20px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 360px; 
+    height: 500px; 
+    perspective: 1000px;
+}
+
+.urun-ic-yapi {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flip-card:hover .urun-ic-yapi {
+    transform: rotateY(180deg);
+}
+
+.urun-on, .urun-arka {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.15);
+}
+
+.urun-on img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.urun-baslik-overlay {
+    font-family: "Times New Roman", sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(64, 87, 41, 0.85);
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.urun-arka {
+    font-family: "Times New Roman", sans-serif;
+    background-color: #405729;
+    color: #FFF7F0; 
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.urun-arka h4 {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FFF7F0;
+    padding-bottom: 10px;
+}
+
+.urun-arka p {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    min-height: 80vh;        
+    gap: 30px;              
+    padding: 180px;     
+    flex-wrap: wrap;
+}
+
+
+.menu-card {
+    position: relative;
+    width: 340px;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.menu-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; 
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 40px;
+}
+
+.card-info h3 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+body {
+    background-color: var(--color-kırıkbeyaz);
+}
+
+
+.food-card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+
+.food-card-description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+}
+
