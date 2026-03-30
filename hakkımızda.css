@@ -1,0 +1,123 @@
+body{
+margin:0;
+font-family: 'Poppins', sans-serif;
+background:#f6f5f2;
+color:#2f2f2f;
+}
+
+.navbar{
+display:flex;
+justify-content:center;
+padding:20px;
+background:#4b6b3c;
+}
+
+.nav-menu{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-link{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-link:hover{
+opacity:0.7;
+}
+
+.hero{
+height:75vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+color:white;
+
+background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
+url("kafe.jpg");
+
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-family:'Playfair Display', serif;
+font-size:60px;
+letter-spacing:2px;
+animation:fadeDown 1.5s ease;
+}
+
+.hero p{
+font-size:18px;
+margin-top:10px;
+opacity:0.9;
+}
+
+@keyframes fadeDown{
+0%{opacity:0; transform:translateY(-40px);}
+100%{opacity:1; transform:translateY(0);}
+}
+
+.section{
+padding:80px 10%;
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+margin-bottom:40px;
+
+transform:translateY(50px);
+opacity:0;
+transition:1s;
+}
+
+.card.show{
+transform:translateY(0);
+opacity:1;
+}
+
+.card h2{
+font-family:'Playfair Display', serif;
+color:#4b6b3c;
+margin-bottom:15px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.box:hover{
+background:#4b6b3c;
+color:white;
+transform:translateY(-8px);
+}
+
+.box h3{
+margin-bottom:10px;
+color:#4b6b3c;
+font-family:'Playfair Display', serif;
+}
+
+.box:hover h3{
+color:white;
+}
+

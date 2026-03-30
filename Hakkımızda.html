@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Hakkımızda | MekiCafe</title>
+
+<link rel="stylesheet" href="hakkımızda.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+<ul class="nav-menu">
+<li><a href="index.html" class="nav-link">Anasayfa</a></li>
+<li><a href="Lezzetlerimiz.html" class="nav-link">Lezzetlerimiz</a></li>
+<li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>Biz Kimiz?</h1>
+<p>Kahve, lezzet ve sıcak bir atmosferin buluşma noktası</p>
+</section>
+
+<section class="section">
+
+<div class="card">
+<h2>Hikayemiz</h2>
+<p>
+MekiCafe, kaliteli kahve ve özenle hazırlanan lezzetleri sıcak ve samimi
+bir ortamda misafirleriyle buluşturmak amacıyla kurulmuştur. Şehrin
+yoğun temposundan uzaklaşıp keyifli bir mola vermek isteyenler için
+özel bir deneyim sunar.
+</p>
+</div>
+
+<div class="card">
+<h2>Lezzet Anlayışımız</h2>
+<p>
+Menümüzde kahve çeşitlerinin yanı sıra günlük hazırlanan tatlılar,
+bowl seçenekleri, taze sandviçler ve tostlar yer almaktadır.
+Her ürünümüzde kalite ve tazeliği ön planda tutuyoruz.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="box">
+<h3>Kahve</h3>
+<p>Özenle seçilmiş çekirdekler</p>
+</div>
+
+<div class="box">
+<h3>Tatlılar</h3>
+<p>Günlük taze üretim</p>
+</div>
+
+<div class="box">
+<h3>Yemekler</h3>
+<p>Bowl, sandviç ve tost çeşitleri</p>
+</div>
+
+</div>
+
+</section>
+
+<script>
+window.addEventListener("scroll", function(){
+let cards = document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+let position = card.getBoundingClientRect().top;
+let screenHeight = window.innerHeight;
+
+if(position < screenHeight - 100){
+card.classList.add("show");
+}
+});
+});
+</script>
+
+</body>
+</html>
