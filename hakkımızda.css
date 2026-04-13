@@ -1,32 +1,123 @@
-body{
-margin:0;
-font-family: 'Poppins', sans-serif;
-background:#f6f5f2;
-color:#2f2f2f;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
 }
 
-.navbar{
-display:flex;
-justify-content:center;
-padding:20px;
-background:#4b6b3c;
+:root {
+    /* Colors */
+    --color-kırıkbeyaz: #FFF7F0;
+    --color-beyaz: #F2F7EE;
+    --color-gri: #DBE8CE;
+    --color-grimsiy: #C4D9AF;
+    --color-berrakyeşil: #ADCB90;
+    --color-açıkyeşil: #96BC71;
+    --color-gazozyeşili: #80AD52;
+    --color-lime: #698E43;
+    --color-kaktüsy: #526F34;
+    --color-ky: #405729;
+    --color-ekstra-ky: #243117;
+    --color-siyah: #0D1108;
+    /* Font Sizes */
+    --font-size-s: 0.9rem;
+    --font-size-m: 1rem;
+    --font-size-l: 1.2rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 2rem;
+    --font-size-xxxl: 2.3rem;
+    /*Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    /*Border Radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+    /*Site max width */
+    --site-max-width: 1300px;
 }
 
-.nav-menu{
-display:flex;
-gap:30px;
-list-style:none;
+ul {
+    list-style: none;
 }
 
-.nav-link{
-text-decoration:none;
-color:white;
-font-weight:500;
-transition:0.3s;
+a {
+    text-decoration: none;
 }
 
-.nav-link:hover{
-opacity:0.7;
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
+
+.section-content {
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--color-ky);
+    font-weight: var(--font-weight-medium);
+    width: 100%;
+    z-index: 5;
+    transition: padding 0.3s ease, background 0.3s ease;
+}
+
+header.shrink {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: rgba(64, 87, 41, 0.95);
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav-logo img {
+    transition: height 0.3s ease;
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+header.shrink .nav-logo img {
+    height: 45px;
+}
+
+.navbar .nav-menu .nav-link {
+    color: var(--color-kırıkbeyaz);
+    padding: 10px 15px;
+    padding-right: 10px;
+    border-radius: var(--border-radius-m);
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    background: var(--color-ekstra-ky);
+    color: var(--color-beyaz);
+
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
 }
 
 .hero{
@@ -39,7 +130,7 @@ text-align:center;
 color:white;
 
 background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
-url("kafe.jpg");
+url("meki-disari.jpeg");
 
 background-size:cover;
 background-position:center;
@@ -120,4 +211,3 @@ font-family:'Playfair Display', serif;
 .box:hover h3{
 color:white;
 }
-
