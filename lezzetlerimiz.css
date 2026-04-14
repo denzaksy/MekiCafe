@@ -208,6 +208,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -215,6 +216,7 @@ body {
         padding: 10px 20px;
         position: relative;
     }
+
     .hamburger-menu {
         display: flex !important;
         flex-direction: column;
@@ -228,6 +230,7 @@ body {
         background-color: white;
         display: block;
     }
+
     .nav-menu {
         display: none !important; 
         flex-direction: column;
@@ -241,9 +244,11 @@ body {
         list-style: none;
         z-index: 9999;
     }
+
     #menu-bar:checked ~ .nav-menu {
         display: flex !important;
     }
+
     .nav-item {
         width: 100%;
         text-align: center;
@@ -254,5 +259,21 @@ body {
         padding: 12px;
         color: white;
         text-decoration: none;
+    }
+    .menu-container {
+        padding: 120px 20px 40px 20px !important;
+        gap: 20px;
+    }
+
+    .menu-card {
+        width: 100% !important;
+        max-width: 450px; 
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .card-info h3 {
+        font-size: 1.4rem;
+        font-family: 'Borel', cursive !important;
     }
 }
