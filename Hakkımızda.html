@@ -6,7 +6,8 @@
 <title>Hakkımızda | MeKi Cafe</title>
 
 <link rel="stylesheet" href="hakkımızda.css">
-<link rel="icon" type="image/png" href="logo.png"> 
+<link rel="icon" type="image/png" href="logo.png">
+
 </head>
 
 <body>
@@ -43,19 +44,33 @@
 <div class="card">
 <h2>Hikayemiz</h2>
 <p>
-MekiCafe, kaliteli kahve ve özenle hazırlanan lezzetleri sıcak ve samimi
+MekiCafe, ilk başta bir online meze satış platformu olarak başladı. Ancak zamanla, şefin yaratıcılığı ve yemek alanında
+ilerlemesi ile beraber cafe konseptine geçiş yapıldı. Açılan kafe özenle hazırlanan lezzetleri sıcak ve samimi
+bir ortamda misafirler ile buluşturup kafenin kendisi gibi sakin ve huzurlu bir atmosfer yaratmayı hedefleyerek açılmıştır.
+
+
+
+
+<!--kaliteli kahve ve özenle hazırlanan lezzetleri sıcak ve samimi
 bir ortamda misafirleriyle buluşturmak amacıyla kurulmuştur. Şehrin
 yoğun temposundan uzaklaşıp keyifli bir mola vermek isteyenler için
-özel bir deneyim sunar.
+özel bir deneyim sunar.-->
 </p>
 </div>
 
 <div class="card">
 <h2>Lezzet Anlayışımız</h2>
 <p>
-Menümüzde kahve çeşitlerinin yanı sıra günlük hazırlanan tatlılar,
+Yemeklerimizdeki en büyük amacımız kaliteli ve tazeliği ön planda tutarak 
+misafirlerimize lezzetli ve sağlıklı seçenekler sunmaktır.Yemeklerimiz modern ve geleneksel tatları harmanlayarak, 
+her damak zevkine hitap eden çeşitli seçenekler sunar.   
+
+
+
+
+<!--Menümüzde kahve çeşitlerinin yanı sıra günlük hazırlanan tatlılar,
 bowl seçenekleri, taze sandviçler ve tostlar yer almaktadır.
-Her ürünümüzde kalite ve tazeliği ön planda tutuyoruz.
+Her ürünümüzde kalite ve tazeliği ön planda tutuyoruz.-->
 </p>
 </div>
 
@@ -92,6 +107,16 @@ if(position < screenHeight - 100){
 card.classList.add("show");
 }
 });
+});
+
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (!header) return;
+    if (window.scrollY > 50) {
+        header.classList.add('shrink');
+    } else {
+        header.classList.remove('shrink');
+    }
 });
 </script>
 

@@ -264,5 +264,8 @@ header.shrink .nav-logo img {
     flex: 1;
     min-height: 350px;
 }
+body {
+    background-color: var(--color-kırıkbeyaz);
+}
 
 

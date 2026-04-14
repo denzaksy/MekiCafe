@@ -127,7 +127,7 @@ align-items:center;
 justify-content:center;
 flex-direction:column;
 text-align:center;
-color:white;
+color:#FFF7F0;
 
 background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
 url("meki-disari.jpeg");
@@ -210,4 +210,8 @@ font-family:'Playfair Display', serif;
 
 .box:hover h3{
 color:white;
+}
+
+body {
+    background-color: var(--color-kırıkbeyaz);
 }
