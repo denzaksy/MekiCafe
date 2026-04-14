@@ -152,10 +152,10 @@ header.shrink .nav-logo img {
 }
 
 .hero-section .hero-details .title {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     padding: 2%;
     color: var(--color-kırıkbeyaz);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Borel', cursive;
 }
 
 .hero-section .hero-details .subtitle {
@@ -163,39 +163,55 @@ header.shrink .nav-logo img {
     color: var(--color-berrakyeşil);
     max-width: 80%;
     margin-top: 8px;
-    font-weight: var(--font-weight-semibold);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: var(--font-weight-normal);
+    font-family: 'Pacifico', cursive;
 }
 
 .hero-section .hero-details .buttons {
     margin-top: 40px;
     display: flex;
     gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-
-
 .hero-section .hero-details .button {
-    padding: 15px 35px;
+    flex: 1;
+    min-width: 180px;
+    max-width: 220px;
+    
+    text-align: center;
+    padding: 15px 25px;
     font-size: 1.2rem;
     color: var(--color-kırıkbeyaz);
     border-radius: var(--border-radius-m);
     background-color: #526F34;
     font-weight: var(--font-weight-semibold);
     transition: 0.3s ease;
+    display: inline-block;
 }
 
 .hero-section .hero-details .button:hover {
     background-color: var(--color-ekstra-ky);
+    transform: translateY(-3px);
 }
 
-/* Adres kısmı */
+/* Mobil için küçük bir dokunuş */
+@media screen and (max-width: 768px) {
+    .hero-section .hero-details .button {
+        flex: none;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
 .contact-section {
     padding: 80px 0;
     background-color: var(--color-kırıkbeyaz);
     color: var(--color-ky);
     scroll-margin-top: 60px;
-    /* Offset for the fixed header */
     min-height: 100vh;
     display: flex;
     align-items: center;
