@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatlılarımız | Me-Ki Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="yemekler.css">
+    <link rel="icon" type="image/png" href="logo.png">  
+</head>
+<header>
+        <nav class="navbar section-content">
+    <a href="#" class="nav-logo">
+        <img src="Beyaz-MeKi-Logo.png" width="50" height="50" alt="MeKiCafe Logo">
+    </a>
+
+    <input type="checkbox" id="menu-bar">
+    
+    <label for="menu-bar" class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+        <li class="nav-item"><a href="Lezzetlerimiz.html" class="nav-link">Lezzetlerimiz</a></li>
+        <li class="nav-item"><a href="Hakkımızda.html" class="nav-link">Hakkımızda</a></li>
+    </ul>
+</nav>
+    </header>
+    <div class="urun-listesi"> 
+    <div class="flip-card">
+        <div class="urun-ic-yapi">
+            <div class="urun-on">
+                <img src="resimler/1ananaslı granola.png" alt="Ananaslı Granola">
+                <div class="urun-baslik-overlay">Ananaslı Granola</div>
+            </div>
+            <div class="urun-arka">
+                <h4>Ananaslı Granola</h4>
+                <p>Yoğurt, ananas, granola, bal ile hazırlanan sağlıklı bir seçenek.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="urun-ic-yapi">
+            <div class="urun-on">
+                <img src="resimler/1çilekli.png" alt="Çilekli Panna Cotta">
+                <div class="urun-baslik-overlay">Çilekli Panna Cotta</div>
+            </div>
+            <div class="urun-arka">
+                <h4>Çilekli Panna Cotta</h4>
+                <p>Krema ve çilek ile hazırlanır. Pürüzsüz ve hafif bir tatlı.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="urun-ic-yapi">
+            <div class="urun-on">
+                <img src="resimler/1donespresso.png" alt="DonEspresso">
+                <div class="urun-baslik-overlay">DonEspresso</div>
+            </div>
+            <div class="urun-arka">
+                <h4>DonEspresso</h4>
+                <p>Dondurma üzeri esspresso.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="urun-ic-yapi">
+            <div class="urun-on">
+                <img src="resimler/1magnolia.png" alt="Çilekli Magnolia">
+                <div class="urun-baslik-overlay">Çilekli Magnolia</div>
+            </div>
+            <div class="urun-arka">
+                <h4>Çilekli Magnolia</h4>
+                <p>Çilek ile klasik magnolia lezzeti.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="urun-ic-yapi">
+            <div class="urun-on">
+                <img src="resimler/1muzlu.png" alt="Muzlu Magnolia">
+                <div class="urun-baslik-overlay">Muzlu Magnolia</div>
+            </div>
+            <div class="urun-arka">
+                <h4>Muzlu Magnolia</h4>
+                <p>Muz ile klasik magnolia lezzeti.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="urun-ic-yapi">
+            <div class="urun-on">
+                <img src="resimler/1mus.png" alt="Çikolatalı Mus">
+                <div class="urun-baslik-overlay">Çikolatalı Mus</div>
+            </div>
+            <div class="urun-arka">
+                <h4>Çikolatalı Mus</h4>
+                <p>Üzerinde vişne reçeli ile servis edilir.</p>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="urun-ic-yapi">
+            <div class="urun-on">
+                <img src="resimler/1spoonful.png" alt="Spoonful">
+                <div class="urun-baslik-overlay">Spoonful</div>
+            </div>
+            <div class="urun-arka">
+                <h4>Spoonful</h4>
+                <p>Enfes çikolata, kek ve kremasıyla popüler tat.</p>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="urun-ic-yapi">
+            <div class="urun-on">
+                <img src="resimler/1tiramisu.png" alt="Tiramisu">
+                <div class="urun-baslik-overlay">Tiramisu</div>
+            </div>
+            <div class="urun-arka">
+                <h4>Tiramisu</h4>
+                <p>Maskarpon, kedi dili ve kakao ile kavanozda servis edilir.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+        if (!header) return;
+        if (window.scrollY > 50) {
+            header.classList.add('shrink');
+        } else {
+            header.classList.remove('shrink');
+        }
+    });
+</script>

@@ -299,7 +299,7 @@ body {
         text-align: center;
         line-height: 1.3;   /* Satır aralığını rahatlattık */
     }
-}
+
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -347,3 +347,4 @@ body {
         color: white;
         text-decoration: none;
     }
+}
