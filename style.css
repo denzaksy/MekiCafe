@@ -197,7 +197,6 @@ header.shrink .nav-logo img {
     transform: translateY(-3px);
 }
 
-/* Mobil için küçük bir dokunuş */
 @media screen and (max-width: 768px) {
     .hero-section .hero-details .button {
         flex: none;
@@ -293,6 +292,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .hero-section .hero-details .title {
+        font-size: 2.1rem; /* Yazıyı mobilde küçülttük */
+        padding: 5% 2%;    /* Üst/Alt boşluğu biraz artırdık */
+        margin-top: 80px;  /* Navbar'ın altında kalmaması için ittik */
+        text-align: center;
+        line-height: 1.3;   /* Satır aralığını rahatlattık */
+    }
+}
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -340,4 +347,3 @@ body {
         color: white;
         text-decoration: none;
     }
-}
