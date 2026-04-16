@@ -221,8 +221,12 @@ header.shrink .nav-logo img {
     flex-wrap: wrap;
 }
 
-
 .menu-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Bu sihirli satır: Üsttekileri en üste, alttakileri en alta iter */
+    min-height: 450px; /* Kartın boyunu biraz sabitleyelim ki içerik yayılabilsin */
+    padding: 30px 20px;
     position: relative;
     width: 340px;
     height: 480px;
@@ -363,4 +367,37 @@ body {
         color: white;
         text-decoration: none;
     }
+}
+
+/* Malzemeleri yan yana dizen kutu */
+.ingredient-banner {
+    display: flex;
+    justify-content: center; /* Ortalar */
+    align-items: center;    /* Dikeyde hizalar */
+    gap: 12px;              /* Görseller arası boşluk */
+    padding: 15px 0;
+    margin-bottom: 10px;    /* Fiyatla arasına biraz mesafe */
+}
+
+/* Her bir görselin boyutu */
+.ingredient img {
+    width: 25px;            /* Buradan boyutu ayarlayabilirsin */
+    height: auto;           /* Oranı korur, görsel yamulmaz */
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3)); /* Görsellere hafif bir gölge (daha derin durur) */
+    transition: transform 0.2s;
+}
+
+/* Üstüne gelince minik bir büyüme efekti (opsiyonel) */
+.ingredient img:hover {
+    transform: scale(1.2);
+}
+
+/* Fiyatın tasarımı */
+.menu-price {
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: right; /* Görseldeki gibi sağa yasladık */
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Üstüne ince bir çizgi */
 }
