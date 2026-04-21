@@ -369,25 +369,22 @@ body {
     }
 }
 
-/* Malzemeleri yan yana dizen kutu */
 .ingredient-banner {
     display: flex;
-    justify-content: center; /* Ortalar */
-    align-items: center;    /* Dikeyde hizalar */
-    gap: 12px;              /* Görseller arası boşluk */
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
     padding: 15px 0;
-    margin-bottom: 10px;    /* Fiyatla arasına biraz mesafe */
+    margin-bottom: 10px;
 }
 
-/* Her bir görselin boyutu */
 .ingredient img {
-    width: 25px;            /* Buradan boyutu ayarlayabilirsin */
-    height: auto;           /* Oranı korur, görsel yamulmaz */
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3)); /* Görsellere hafif bir gölge (daha derin durur) */
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
     transition: transform 0.2s;
 }
 
-/* Üstüne gelince minik bir büyüme efekti (opsiyonel) */
 .ingredient img:hover {
     transform: scale(1.2);
 }
@@ -397,7 +394,7 @@ body {
     font-size: 26px;
     font-weight: 800;
     color: #ffffff;
-    text-align: right; /* Görseldeki gibi sağa yasladık */
+    text-align: right;
     padding-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Üstüne ince bir çizgi */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
