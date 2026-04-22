@@ -386,10 +386,10 @@ body {
 }
 
 .ingredient img:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
+    filter: brightness(1.1);
 }
 
-/* Fiyatın tasarımı */
 .menu-price {
     font-size: 26px;
     font-weight: 800;
