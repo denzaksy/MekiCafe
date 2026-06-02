@@ -224,8 +224,8 @@ header.shrink .nav-logo img {
 .menu-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Bu sihirli satır: Üsttekileri en üste, alttakileri en alta iter */
-    min-height: 450px; /* Kartın boyunu biraz sabitleyelim ki içerik yayılabilsin */
+    justify-content: space-between;
+    min-height: 450px;
     padding: 30px 20px;
     position: relative;
     width: 340px;
